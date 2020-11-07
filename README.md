@@ -1,1 +1,1 @@
-# code
+The idea of POSEIDON project comes from ancient Greek mythology. Yes, we want to continue the power of Poseidon and the will and philosophy of Poseidon in the DEFI world. Believe us, we are the embodiment of justice, we fight for freedom and the future. We are positive and optimistic, we are good at discovery, we are brave to explore, we study hard. Yeah, yeah, we've been on the road.
