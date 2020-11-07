@@ -1,0 +1,566 @@
+{
+    // 以像素为单位控制字号。
+    "editor.fontSize": 14,
+  
+    // 控制字体系列。
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  
+    // 一个制表符等于的空格数。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+    "editor.tabSize": 4,
+  
+    // 控制编辑器中呈现空白字符的方式，可能为“无”、“边界”和“全部”。“边界”选项不会在单词之间呈现单空格。
+    "editor.renderWhitespace": "none",
+  
+    // 控制光标样式，接受的值为 "block"、"block-outline"、"line"、"line-thin" 、"underline" 和 "underline-thin"
+    "editor.cursorStyle": "line",
+  
+    // 用鼠标添加多个光标时使用的修改键。"ctrlCmd" 会映射为 "Ctrl" (Windows 和 Linux) 或 "Command" (OSX)。“转到定义”和“打开链接”功能所需的动作将会相应调整，不与多光标修改键冲突。
+    "editor.multiCursorModifier": "alt",
+  
+    // 按 Tab 键时插入空格。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+    "editor.insertSpaces": true,
+  
+    // 控制折行方式。可以选择： - “off” （禁用折行）， - “on” （视区折行）， - “wordWrapColumn”（在“editor.wordWrapColumn”处折行）或 - “bounded”（在视区与“editor.wordWrapColumn”两者的较小者处折行）。
+    "editor.wordWrap": "off",
+  
+    // 配置 glob 模式以在搜索中排除文件和文件夹。例如，文件资源管理器根据此设置决定文件或文件夹的显示和隐藏。
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.git": true,
+      "**/.hg": true,
+      "**/.svn": true,
+      "**/CVS": true,
+      "**/node_modules": true,
+      "**/obj": true
+    }
+  ,
+    // 控制差异编辑器是否将对前导空格或尾随空格的更改显示为差异
+    "diffEditor.ignoreTrimWhitespace": true,
+  
+    // 控制差异编辑器是否为已添加/删除的更改显示 +/- 指示符号
+    "diffEditor.renderIndicators": true,
+  
+    // 控制 Diff 编辑器以并排或内联形式显示差异
+    "diffEditor.renderSideBySide": true,
+  
+    // 控制是否应在遇到提交字符时接受建议。例如，在 JavaScript 中，分号(";")可以为提交字符，可接受建议并键入该字符。
+    "editor.acceptSuggestionOnCommitCharacter": true,
+  
+    // 控制按“Enter”键是否像按“Tab”键一样接受建议。这能帮助避免“插入新行”和“接受建议”之间的歧义。值为“smart”时表示，仅当文字改变时，按“Enter”键才能接受建议
+    "editor.acceptSuggestionOnEnter": "on",
+  
+    // 控制编辑器是否应运行在对屏幕阅读器进行优化的模式。
+    "editor.accessibilitySupport": "auto",
+  
+    // 控制编辑器是否应该在左括号后自动插入右括号
+    "editor.autoClosingBrackets": true,
+  
+    // 控制编辑器是否在用户键入、粘贴或移动行时自动调整缩进。语言的缩进规则必须可用。
+    "editor.autoIndent": true,
+  
+    // 控制编辑器是否显示 CodeLens
+    "editor.codeLens": true,
+  
+    // 控制编辑器是否显示内联颜色修饰器和颜色选取器。
+    "editor.colorDecorators": true,
+  
+    // 控制光标动画样式，可能的值为 "blink"、"smooth"、"phase"、"expand" 和 "solid"
+    "editor.cursorBlinking": "blink",
+  
+    // 控制光标样式，接受的值为 "block"、"block-outline"、"line"、"line-thin" 、"underline" 和 "underline-thin"
+    "editor.cursorStyle": "line",
+  
+    // 当打开文件时，将基于文件内容检测 "editor.tabSize" 和 "editor.insertSpaces"。
+    "editor.detectIndentation": true,
+  
+    // 控制编辑器是否应该允许通过拖放移动所选项。
+    "editor.dragAndDrop": true,
+  
+    // 控制没有选择内容的复制是否复制当前行。
+    "editor.emptySelectionClipboard": true,
+  
+    // 控制当编辑器中选中多个字符或多行文字时是否开启“在选定内容中查找”选项 
+    "editor.find.autoFindInSelection": false,
+  
+    // 控制查找小组件是否应在 macOS 上读取或修改在应用间共享的查找剪贴板
+    "editor.find.globalFindClipboard": true,
+  
+    // 控制是否将编辑器的选中内容作为搜索词填入到查找组件
+    "editor.find.seedSearchStringFromSelection": true,
+  
+    // 控制编辑器是否启用代码折叠功能
+    "editor.folding": true,
+  
+    // 控制字体系列。
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  
+    // 启用字体连字
+    "editor.fontLigatures": false,
+  
+    // 以像素为单位控制字号。
+    "editor.fontSize": 14,
+  
+    // 控制字体粗细。
+    "editor.fontWeight": "normal",
+  
+    // 控制编辑器是否应自动设置粘贴内容的格式。格式化程序必须可用并且能设置文档中某一范围的格式。
+    "editor.formatOnPaste": false,
+  
+    // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": false,
+  
+    // 控制编辑器是否应在键入后自动设置行的格式
+    "editor.formatOnType": false,
+  
+    // 控制编辑器是否应呈现垂直字形边距。字形边距最常用于调试。
+    "editor.glyphMargin": true,
+  
+    // 控制光标是否应隐藏在概述标尺中。
+    "editor.hideCursorInOverviewRuler": false,
+  
+    // 按 Tab 键时插入空格。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+    "editor.insertSpaces": true,
+  
+    // 以像素为单位控制字符间距。
+    "editor.letterSpacing": 0,
+  
+    // 启用代码操作小灯泡提示
+    "editor.lightbulb.enabled": true,
+  
+    // 控制行高。使用 0 通过字号计算行高。
+    "editor.lineHeight": 0,
+  
+    // 控制行号的显示。可选值为 "on"、"off" 和 "relative"。
+    "editor.lineNumbers": "on",
+  
+    // 控制编辑器是否应检测链接并使它们可被点击
+    "editor.links": true,
+  
+    // 当选择其中一项时，将突出显示匹配的括号。
+    "editor.matchBrackets": true,
+  
+    // 控制是否显示 minimap
+    "editor.minimap.enabled": true,
+  
+    // 限制最小映射的宽度，尽量多地呈现特定数量的列
+    "editor.minimap.maxColumn": 120,
+  
+    // 呈现某行上的实际字符(与颜色块相反)
+    "editor.minimap.renderCharacters": true,
+  
+    // 控制是否自动隐藏小地图滑块。可选值为 "always" 和 "mouseover"
+    "editor.minimap.showSlider": "mouseover",
+  
+    // 要对鼠标滚轮滚动事件的 "deltaX" 和 "deltaY" 使用的乘数 
+    "editor.mouseWheelScrollSensitivity": 1,
+  
+    // 通过使用鼠标滚轮同时按住 Ctrl 可缩放编辑器的字体
+    "editor.mouseWheelZoom": false,
+  
+    // 用鼠标添加多个光标时使用的修改键。"ctrlCmd" 会映射为 "Ctrl" (Windows 和 Linux) 或 "Command" (OSX)。“转到定义”和“打开链接”功能所需的动作将会相应调整，不与多光标修改键冲突。
+    "editor.multiCursorModifier": "alt",
+  
+    // 控制编辑器是否应该突出显示语义符号次数
+    "editor.occurrencesHighlight": true,
+  
+    // 控制概述标尺周围是否要绘制边框。
+    "editor.overviewRulerBorder": true,
+  
+    // 控制可在概述标尺同一位置显示的效果数量
+    "editor.overviewRulerLanes": 3,
+  
+    // 启用在输入时显示含有参数文档和类型信息的小面板
+    "editor.parameterHints": true,
+  
+    // 控制键入时是否应自动显示建议
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+  
+    // 控制延迟多少毫秒后将显示快速建议
+    "editor.quickSuggestionsDelay": 10,
+  
+    // 控制编辑器是否应呈现控制字符
+    "editor.renderControlCharacters": false,
+  
+    // 控制编辑器是否应呈现缩进参考线
+    "editor.renderIndentGuides": true,
+  
+    // 控制编辑器应如何呈现当前行突出显示，可能为“无”、“装订线”、“线”和“全部”。
+    "editor.renderLineHighlight": "line",
+  
+    // 控制编辑器中呈现空白字符的方式，可能为“无”、“边界”和“全部”。“边界”选项不会在单词之间呈现单空格。
+    "editor.renderWhitespace": "none",
+  
+    // 控制选取范围是否有圆角
+    "editor.roundedSelection": true,
+  
+    // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
+    "editor.rulers": [],
+  
+    // 控制编辑器是否可以滚动到最后一行之后
+    "editor.scrollBeyondLastLine": true,
+  
+    // 控制编辑器是否应突出显示选项的近似匹配
+    "editor.selectionHighlight": true,
+  
+    // 控制是否自动隐藏导航线上的折叠控件。
+    "editor.showFoldingControls": "mouseover",
+  
+    // 控制编辑器是否在滚动时使用动画
+    "editor.smoothScrolling": false,
+  
+    // 控制是否将代码段与其他建议一起显示以及它们的排序方式。
+    "editor.snippetSuggestions": "inline",
+  
+    // 即使在双击编辑器内容或按 Esc 键时，也要保持速览编辑器的打开状态。
+    "editor.stablePeek": false,
+  
+    // 建议小组件的字号
+    "editor.suggestFontSize": 0,
+  
+    // 建议小组件的行高
+    "editor.suggestLineHeight": 0,
+  
+    // 控制键入触发器字符时是否应自动显示建议
+    "editor.suggestOnTriggerCharacters": true,
+  
+    // 一个制表符等于的空格数。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+    "editor.tabSize": 4,
+  
+    // 删除尾随自动插入的空格
+    "editor.trimAutoWhitespace": true,
+  
+    // 在制表位后插入和删除空格
+    "editor.useTabStops": true,
+  
+    // 控制是否根据文档中的文字计算自动完成列表。
+    "editor.wordBasedSuggestions": true,
+  
+    // 执行文字相关的导航或操作时将用作文字分隔符的字符
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  
+    // 控制折行方式。可以选择： - “off” （禁用折行）， - “on” （视区折行）， - “wordWrapColumn”（在“editor.wordWrapColumn”处折行）或 - “bounded”（在视区与“editor.wordWrapColumn”两者的较小者处折行）。
+    "editor.wordWrap": "off",
+  
+    // 在 "editor.wordWrap" 为 "wordWrapColumn" 或 "bounded" 时控制编辑器列的换行。
+    "editor.wordWrapColumn": 80,
+  
+    // 控制折行的缩进。可以是“none”、“same”或“indent”。
+    "editor.wrappingIndent": "same",
+  
+  
+    // 如果启用，会在打开文件时尝试猜测字符集编码。也可以根据语言配置此设置。
+    "files.autoGuessEncoding": false,
+  
+    // 读取和编写文件时使用的默认字符集编码。也可以根据语言配置此设置。
+    "files.encoding": "utf8",
+  
+    // 默认行尾字符。使用 \n 表示 LF，\r\n 表示 CRLF。
+    "files.eol": "\r\n",
+  
+    // 配置 glob 模式以在搜索中排除文件和文件夹。例如，文件资源管理器根据此设置决定文件或文件夹的显示和隐藏。
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/node_modules": true,
+      "**/.DS_Store": true
+    },
+  
+    // 启用后，保存文件时在文件末尾插入一个最终新行。
+    "files.insertFinalNewline": false,
+  
+    // 启用后，保存文件时将删除在最终新行后的所有新行。
+    "files.trimFinalNewlines": false,
+  
+    // 启用后，将在保存文件时剪裁尾随空格。
+    "files.trimTrailingWhitespace": false,
+  
+    // 配置文件路径的 glob 模式以从文件监视排除。模式必须在绝对路径上匹配(例如 ** 前缀或完整路径需正确匹配)。更改此设置需要重启。如果在启动时遇到 Code 消耗大量 CPU 时间，则可以排除大型文件夹以减少初始加载。
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    },
+  
+  
+    // 配置 glob 模式以在搜索中排除文件和文件夹。从 files.exclude 设置中继承所有 glob 模式。
+    "search.exclude": {
+      
+      "**/bower_components": "**/node_modules"
+    },
+  
+    // 控制搜索文件时是否使用 .gitignore 和 .ignore 文件。
+    "search.useIgnoreFiles": true,
+  
+  
+    // 启用/禁用 HTML 标记的自动关闭。
+    "html.autoClosingTags": true,
+  
+    // 以逗号分隔的标记列表，不应在其中重新设置内容的格式。"null" 默认为 "pre" 标记。
+    "html.format.contentUnformatted": "pre,code,textarea",
+  
+    // 以新行结束。
+    "html.format.endWithNewline": false,
+  
+    // 标记列表，以逗号分隔，其前应有额外新行。"null" 默认为“标头、正文、/html”。
+    "html.format.extraLiners": "head, body, /html",
+  
+    // 格式和缩进 {{#foo}} 和 {{/foo}}。
+    "html.format.indentHandlebars": false,
+  
+    // 缩进 <head> 和 <body> 部分。
+    "html.format.indentInnerHtml": false,
+  
+    // 要保留在一个区块中的换行符的最大数量。对于无限制使用 "null"。
+    "html.format.maxPreserveNewLines": null,
+  
+    // 是否要保留元素前面的现有换行符。仅适用于元素前，不适用于标记内或文本。
+    "html.format.preserveNewLines": true,
+  
+    // 以逗号分隔的标记列表不应重设格式。"null" 默认为所有列于 https://www.w3.org/TR/html5/dom.html#phrasing-content 的标记。
+    "html.format.unformatted": "wbr",
+  
+    // 对属性进行换行。
+    "html.format.wrapAttributes": "auto",
+  
+    // 每行最大字符数(0 = 禁用)。
+    "html.format.wrapLineLength": 120,
+  
+    // 配置内置 HTML 语言支持是否建议 Angular V1 标记和属性。
+    "html.suggest.angular1": true,
+  
+    // 配置内置 HTML 语言支持是否建议 HTML5 标记、属性和值。
+    "html.suggest.html5": true,
+  
+    // 配置内置 HTML 语言支持是否建议 Ionic 标记、属性和值。
+    "html.suggest.ionic": true,
+  
+    // 配置内置的 HTML 语言支持是否对嵌入的脚本进行验证。
+    "html.validate.scripts": true,
+  
+    // 配置内置的 HTML 语言支持是否对嵌入的样式进行验证。
+    "html.validate.styles": true,
+  
+  
+    // 将当前项目中的 JSON 文件与架构关联起来
+    "json.schemas": [],
+  
+  
+    // 设置换行符如何在 markdown 预览中呈现。将其设置为 "true" 会为每一个新行创建一个 <br>。
+    "markdown.preview.breaks": false,
+  
+    // 在 Markdown 预览中双击切换到编辑器。
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+  
+    // 控制 Markdown 预览中使用的字体系列。
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
+  
+    // 控制 Markdown 预览中使用的字号(以像素为单位)。
+    "markdown.preview.fontSize": 14,
+  
+    // 控制 Markdown 预览中使用的行高。此数值与字号相关。
+    "markdown.preview.lineHeight": 1.6,
+  
+    // 在 Markdown 预览中启用或禁用将类似 URL 的文本转换为链接。
+    "markdown.preview.linkify": true,
+  
+    // 在 Markdown 预览中标记当前的编辑器选定内容。
+    "markdown.preview.markEditorSelection": true,
+  
+    // 当 Markdown 预览滚动时，更新编辑器的视图。
+    "markdown.preview.scrollEditorWithPreview": true,
+  
+    // 滚动 Markdown 预览以显示编辑器中当前所选的行。
+    "markdown.preview.scrollPreviewWithEditorSelection": true,
+  
+    // 设置如何在 Markdown 预览中呈现 YAML 扉页。“隐藏”会删除扉页。否则，扉页则被视为 Markdown 内容。
+    "markdown.previewFrontMatter": "hide",
+  
+    // 要在 Markdown 预览中使用的 CSS 样式表的 URL 或本地路径列表。相对路径被解释为相对于资源管理器中打开的文件夹。如果没有任何打开的文件夹，则会被解释为相对于 Markdown 文件的位置。所有的 "\" 需写为 "\\"。
+    "markdown.styles": [],
+  
+  
+    // 定义逗号分隔符后面的空格处理。
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+  
+    // 定义构造器关键字后的空格处理。要求 TypeScript >= 2.3.0。
+    "javascript.format.insertSpaceAfterConstructor": false,
+  
+    // 定义匿名函数的函数关键字后面的空格处理。
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  
+    // 定义控制流语句中关键字后面的空格处理。
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+  
+    // 定义 JSX 表达式左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  
+    // 定义非空括号的左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.3.0。
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  
+    // 定义非空方括号的左括号后面和右括号前面的空格处理。
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+  
+    // 定义非空圆括号的左括号后面和右括号前面的空格处理。
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  
+    // 定义模板字符串的左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+  
+    // 在 For 语句中，定义分号后面的空格处理。
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+  
+    // 定义二进制运算符后面的空格处理
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+  
+    // 在函数参数括号前定义空格处理。需要 TypeScript >= 2.1.5。
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  
+    // 定义控制块的左括号是否放置在新的一行。
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  
+    // 定义函数的左大括号是否放置在新的一行。
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  
+    // 启用/禁用在 JavaScript 建议列表中包含文件中的唯一名称。
+    "javascript.nameSuggestions": true,
+  
+    // 启用/禁用自动 JSDoc 注释
+    "jsDocCompletion.enabled": true,
+  
+    // 启用或禁用自动导入建议。要求 TypeScript >= 2.6.1
+    "typescript.autoImportSuggestions.enabled": true,
+  
+    // 定义逗号分隔符后面的空格处理。
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+  
+    // 定义构造器关键字后的空格处理。要求 TypeScript >= 2.3.0。
+    "typescript.format.insertSpaceAfterConstructor": false,
+  
+    // 定义匿名函数的函数关键字后面的空格处理。
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  
+    // 定义控制流语句中关键字后面的空格处理。
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+  
+    // 定义 JSX 表达式左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  
+    // 定义非空括号的左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.3.0。
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  
+    // 定义非空方括号的左括号后面和右括号前面的空格处理。
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+  
+    // 定义非空圆括号的左括号后面和右括号前面的空格处理。
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  
+    // 定义模板字符串的左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+  
+    // 在 For 语句中，定义分号后面的空格处理。
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+  
+    // 定义 TypeScript 中类型断言后的空格处理。要求 TypeScript >= 2.4。
+    "typescript.format.insertSpaceAfterTypeAssertion": false,
+  
+    // 定义二进制运算符后面的空格处理
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+  
+    // 在函数参数括号前定义空格处理。需要 TypeScript >= 2.1.5。
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+  
+    // 定义控制块的左括号是否放置在新的一行。
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  
+    // 定义函数的左大括号是否放置在新的一行。
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+  
+    // 当输入导入路径时启用或禁用快速建议。
+    "typescript.quickSuggestionsForPaths": true,
+  
+    // 完成函数的参数签名。
+    "typescript.useCodeSnippetsOnMethodSuggest": false,
+  
+  
+    // 参数数量无效
+    "css.lint.argumentsInColorFunction": "error",
+  
+    // 使用边距或边框时，不要使用宽度或高度
+    "css.lint.boxModel": "ignore",
+  
+    // 使用供应商特定前缀时，确保同时包括所有其他供应商特定属性
+    "css.lint.compatibleVendorPrefixes": "ignore",
+  
+    // 不要使用重复的样式定义
+    "css.lint.duplicateProperties": "ignore",
+  
+    // 不要使用空规则集
+    "css.lint.emptyRules": "warning",
+  
+    // 避免使用“float”。浮动会带来脆弱的 CSS，如果布局的某一方面更改，将很容易破坏 CSS。
+    "css.lint.float": "ignore",
+  
+    // @font-face 规则必须定义 "src" 和 "font-family" 属性
+    "css.lint.fontFaceProperties": "warning",
+  
+    // 十六进制颜色必须由三个或六个十六进制数字组成
+    "css.lint.hexColorLength": "error",
+  
+    // 选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密。
+    "css.lint.idSelector": "ignore",
+  
+    // 仅当支持 IE7 及更低版本时，才需要 IE hack
+    "css.lint.ieHack": "ignore",
+  
+    // 避免使用 !important。它表明整个 CSS 的特异性已经失去控制且需要重构。
+    "css.lint.important": "ignore",
+  
+    // Import 语句不会并行加载
+    "css.lint.importStatement": "ignore",
+  
+    // 因显示而忽略属性。例如，使用 "display: inline"时，宽度、高度、上边距、下边距和 float 属性将不起作用
+    "css.lint.propertyIgnoredDueToDisplay": "warning",
+  
+    // 通配选择符 (*) 运行效率低
+    "css.lint.universalSelector": "ignore",
+  
+    // 未知的属性。
+    "css.lint.unknownProperties": "warning",
+  
+    // 未知的供应商特定属性。
+    "css.lint.unknownVendorSpecificProperties": "ignore",
+  
+    // 使用供应商特定前缀时，还应包括标准属性
+    "css.lint.vendorPrefix": "warning",
+  
+    // 零不需要单位
+    "css.lint.zeroUnits": "ignore",
+  
+    // 启用或禁用所有验证
+    "css.validate": true,
+    // 控制自动检测 npm 脚本是否打开。默认开启。
+    "npm.autoDetect": "on",
+  
+    // 用于运行脚本的程序包管理器。
+    "npm.packageManager": "npm",
+  
+    // 使用 "--silent" 选项运行 npm 命令。
+    "npm.runSilent": false,
+  
+  
+    // 是否启用 Git
+    "git.enabled": true,
+  
+  
+    // 控制自动检测 Jake 任务是否打开。默认开启。
+    "jake.autoDetect": "on",
+    // 控制自动检测 Gulp 任务是否打开。默认开启。
+    "gulp.autoDetect": "on",
+    "solidity.compileUsingLocalVersion" : "D:\\VSCode\\solc\\soljson-v0.5.13_commit.5b0b510c.js"
+  }
